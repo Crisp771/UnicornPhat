@@ -1,12 +1,14 @@
 #import unicornhat as uh
-import unicornmock as uh
+import unicornmock as uhc
 import time
 import colorsys
 
 spacing = 360.0 / 16.0
 hue = 0
 
-uh.set_layout(uh.PHAT)
+uh = uhc.unicornmock()
+
+uh.set_layout(0)
 uh.brightness(0.5)
 
 print("Starting Unicorn")
