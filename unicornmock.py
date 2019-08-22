@@ -1,3 +1,5 @@
+from sty import fg, rs
+
 class unicornmock():
     def __init__(self):
         self.PHAT = 32
@@ -20,4 +22,6 @@ class unicornmock():
         for x in range(8):
             for y in range(4):
                 r,g,b = self.grid[y][x]
-                print("("+str(r)+","+str(g)+","+str(b)+")")
+                #print("("+str(r)+","+str(g)+","+str(b)+")")
+                print(fg(r,g,b)+"*"+fg.rs, end="")
+            print()
